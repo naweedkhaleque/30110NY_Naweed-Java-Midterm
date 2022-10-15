@@ -11,8 +11,30 @@ public class Factorial {
      */
 
     public static void main(String[] args) {
+        System.out.println(recursion(5));
+        System.out.println(iteration(5));
 
+    }
+    //Factorial using Recursion
+    public static int recursion(int n) {
+        if (n == 0) {
+            return 1;
+        }
+        else {
+            return (n * recursion(n - 1));
+        }
+    }
 
+    //Factorial using Iteration
+    public static int iteration(int n) {
+        int result = 1;
+        if (n >= 1) {
+            for (int i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+        return result;
     }
 
 }
