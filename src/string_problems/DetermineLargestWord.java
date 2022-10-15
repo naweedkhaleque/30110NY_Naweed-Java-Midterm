@@ -23,7 +23,15 @@ public class DetermineLargestWord {
         String st = "";
 
         // Implement here
+        String [] splitWords = wordGiven.split(" ");
 
+        for (int i = 0; i < splitWords.length; i++) {
+            if (splitWords[i].length() >= st.length()) {
+                st = splitWords[i];
+            }
+        }
+        map.put(st.length(), st);
+        System.out.println(st.length() + " " + st);
         return map;
     }
 }
