@@ -11,9 +11,21 @@ public class Palindrome {
      */
 
     public static void main(String[] args) {
-
+        System.out.println(isPalindrome("MOM"));
     }
 
     // Implement here
+    public static boolean isPalindrome(String str) {
+        //String builder for String modifications
+        StringBuilder reversedStr = new StringBuilder();
+        str = str.toLowerCase();
+        char[] strCharArray = str.toCharArray();
 
+        // reverse string operation with for-loop
+        for (int i = strCharArray.length - 1; i >= 0; i--) {
+            reversedStr.append(strCharArray[i]);
+        }
+        // if it's a Palindrome then true, else it returns false;
+        return (reversedStr.toString()).equals(str);
+    }
 }

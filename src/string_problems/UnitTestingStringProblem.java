@@ -12,5 +12,8 @@ public class UnitTestingStringProblem {
 
 //        String s = "Human brain is a biological learning machine";
 //        DetermineLargestWord.findTheLargestWord(s);
+
+        // should return false
+        System.out.println(Palindrome.isPalindrome("RACECAT"));
     }
 }
