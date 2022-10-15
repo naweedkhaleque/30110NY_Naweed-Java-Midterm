@@ -7,6 +7,7 @@ public class UnitTestingStringProblem {
      */
 
     public static void main(String[] args) {
-
+        Anagram.isAnagram("FART", "RAFT");
+        Anagram.isAnagram("BOB", "BOC");
     }
 }
