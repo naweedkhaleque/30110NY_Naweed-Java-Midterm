@@ -242,6 +242,26 @@ public class SharedStepsDatabase {
         }
     }
 
+    public void insertQueue(String tableName, String columnName, Queue<Object> q) {
+        dropTable(tableName);
+        boolean isNumericalData = false;
+
+        if (q.peek() instanceof Integer) {
+            isNumericalData = true;
+        }
+        createTableSingleColumn(tableName, columnName, isNumericalData);
+
+        try {
+            for (Object obj : q) {
+                ps = connect.prepareStatement("INSERT INTO " + tableName + " ( " + columnName + " ) VALUES(?)");
+                ps.setObject(1, obj);
+                ps.executeUpdate();
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
     /**
      * Inserts a map to a database table
      *
