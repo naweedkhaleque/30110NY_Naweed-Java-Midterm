@@ -1,58 +1,74 @@
 ***ANSWER ALL OF THE QUESTIONS BELOW***
 
 What is a programming language?
-Answer:
+Answer: A programming language is a tool used to provide a computer a set of instructions for executing certain tasks.
 
 What is a JDK composed of? Define each components?
-Answer:
+Answer: A JDK is composed of the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac),
+        an archiver (jar), a documentation generator, and other tools needed in Java development.
 
 What is an IDE?
-Answer:
+Answer: Integrated Development Environment.
 
 What are some of the most popular Java IDEs available in the market?
-Answer:
+Answer: Eclipse, IntelliJ.
 
 Explain the entire java life cycle.
-Answer:
+Answer: The Java life cycle starts with code being written in an editor which is saved as a .java file (source file)
+        and then this gets converted to a .class file containing bytecode after compilation with the Java compiler. This .class
+        file is then loaded into memory by the class loader. The bytecode verifier confirms the validity of the bytecode.
+        Finally, the JVM reads the bytecode and translates them into machine code (irrespective of the OS as Java is
+        platform-independent).
 
 What is a class?
-Answer:
+Answer: A class is like a blueprint.
 
 What is an object?
-Answer:
+Answer: An object is an element or an instance of a class.
 
 What is the entry point of a Java project?
-Answer:
+Answer: The main method.
 
 Why is the main() method static?
-Answer:
+Answer: So that it can be called without the need of creating objects.
 
 Which class is the superclass of all classes?
-Answer:
+Answer: The Object class.
 
 What is difference between path and classpath variables?
-Answer:
+Answer: Path is an environment variable set for Java tools. Classpath is used by a system or application ClassLoader
+to locate and load compiled Java bytecodes stored in the .class file.
 
 What is the difference between an Interface and Abstract class?
-Answer:
+Answer: Interface is fully abstract by default and Interface methods are by default abstract and public. Abstract classes
+can have an access modifier, they can contain data fields, and can have constructors while an interface can't have constructors.
 
 Can you make an Object from an Interface and Abstract class? If yes or no, how would you do it?
-Answer:
+Answer: No, abstract classes can't be instantiated.
 
 What is Access Modifier?
-Answer:
+Answer: The visibility of the scope.
 
 What is OOP? Define each OOP concept.
-Answer:
+Answer: Object-Oriented Programming is about creating objects and using objects as the primary source to implement what is to happen.
+1. Abstraction - the process of hiding the implementation details from the user. The user is only exposed to the
+                     behavior.
+    2. Encapsulation - wrapping of data under a single unit. It makes the data private (data is hidden from other
+                       classes) and prevents it from being accessed outside this wrapper.
+    3. Inheritance - the mechanism in which one class is allowed to inherit features from another class. These classes
+                     share an "Is-A" relationship.
+    4. Polymorphism - OOP languages are able to differentiate between entities with the same name in an efficient
+                      manner.
 
 What is Java Package and which package is imported by default?
-Answer:
+Answer: Java.lang package, a package is a directory and holds classes.
 
 What is an API? List some API's that you have used so far.
-Answer:
+Answer: Application Programming Interface is an intermediary between two or more software applications that
+        allow them to communicate with one another.
 
 Does java support multiple inheritance? Why or why not?
-Answer:
+Answer: No, it will create conflicts and confusion.
 
 What is method overloading? List all of the different ways to overload.
 Answer:
